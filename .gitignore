@@ -1,0 +1,4 @@
+# misc
+.DS_Store
+.vscode
+infra/mailServer_jar.tgz

@@ -1,0 +1,11 @@
+#cloud-config
+ssh_authorized_keys:
+## Note: ssh public key
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOQB0BUH/8EhhMSc0WU1V7wXpdfpbflRxTnMPlYPSATj oraaangecolin@gmail.com
+
+package_update: true
+
+runcmd:
+## install mysql
+  - sudo apt update
+  - sudo apt install -y mysql-server
