@@ -2,7 +2,6 @@ import './index.scss';
 import React, { FC } from "react";
 import { Form, Button, Input, message } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
-import { useParams, useOutletContext } from 'react-router-dom';
 
 import { sendMail, draftMail } from '../../../data/api';
 

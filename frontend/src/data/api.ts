@@ -3,11 +3,11 @@ import { message } from 'antd';
 
 axios.defaults.withCredentials = true;
 
+const baseUrl = 'http://192.168.64.16:8080';
+
 const getData = async (axiosParams: any, showTip = true) => {
-  const baseUrl = 'http://192.168.64.16:8080';
   try {
     const { data } = await axios({
-      withCredentials: true,
       ...axiosParams,
       url: `${baseUrl}${axiosParams.url}`,
     });
@@ -34,24 +34,12 @@ const getData = async (axiosParams: any, showTip = true) => {
   }
 }
 
-export const userLogout = async () => {
-  return getData({
-    url: `/user/logout`,
-  })
-}
-
 export const userLogin = async (params: any) => {
   return getData({
     method: 'POST',
     url: `/user/login`,
     data: params
   })
-}
-
-export const userInfo = async () => {
-  return getData({
-    url: `/user/info`,
-  }, false)
 }
 
 export const userSignup = async (params: any) => {

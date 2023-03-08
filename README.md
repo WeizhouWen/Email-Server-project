@@ -65,8 +65,9 @@ $ multipass transfer nginx.conf vmLoadBalancer:.
 
 Connect to this VM. Change nginx configuration and restart service
 ```
-sudo cp nginx.conf /etc/nginx/nginx.conf
-sudo systemctl restart nginx.service
+$ ssh ubuntu@192.168.64.15
+$ sudo cp nginx.conf /etc/nginx/nginx.conf
+$ sudo systemctl restart nginx.service
 ```
 
 # 4. Start Frontend Application

@@ -3,10 +3,6 @@ import { UserOutlined } from '@ant-design/icons';
 import { Popover, Layout } from 'antd';
 import { useOutletContext, useNavigate } from 'react-router-dom';
 
-import { userLogout } from '../../data/api';
-
-// import { useUser } from '../../UserProvider';
-
 const { Header } = Layout;
 
 interface Props {
@@ -24,7 +20,7 @@ const LayoutHeader: FC<Props> = ({setUser}) => {
 
   return (
     <Header className="header">
-      <div className="header-title">Mail</div>
+      <div className="header-title">COEN Mail</div>
       
       <Popover
         overlayClassName="user-menu-pop"
