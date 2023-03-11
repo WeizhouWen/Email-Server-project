@@ -33,7 +33,7 @@ const Mail: FC = () => {
       <Layout className="layout">
         <Sider className="sidebar">
           <div className="btn-box">
-            <Button type="primary" shape="round" onClick={() => openCompose()}>Compose</Button>
+            <Button className="compose-btn" type="primary" shape="round" onClick={() => openCompose()}>Compose</Button>
           </div>
           <Menu
             className="side-menu"
@@ -52,8 +52,12 @@ const Mail: FC = () => {
         </Sider>
         <Content className="content">
           <MailList user={user} openCompose={openCompose} showCompose={showCompose}/>
-          {showCompose ? <MailCompose user={user} defaultData={composeData} onClose={closeCompose}/> : null}
-        </Content>
+          {showCompose ? 
+          <>
+            <div className="compose-mask"/>
+            <MailCompose user={user} defaultData={composeData} onClose={closeCompose}/>
+          </>: null}    
+          </Content>
       </Layout>
     </Layout>
   );

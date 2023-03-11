@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
-import { MailTwoTone } from '@ant-design/icons';
 import {Form, Input, Button, Typography, message} from 'antd';
 import { userLogin } from '../../data/api';
 import { useNavigate, useOutletContext } from 'react-router-dom';
@@ -27,7 +26,6 @@ const Login: FC = () => {
   return (
     <>
       <div className="title-box">
-        <MailTwoTone className="title-icon" />
         <Title level={4}>Sign in to continue</Title>
       </div>
       <Form

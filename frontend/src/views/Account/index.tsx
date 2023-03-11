@@ -7,8 +7,10 @@ const Account: FC = () => {
 
   return (
     <div className="account-container">
-      <div className="account-form">
-        <Outlet context={context}/>
+      <div className="account-circle">
+        <div className="account-form">
+          <Outlet context={context}/>
+        </div>
       </div>
     </div>
   )

@@ -1,6 +1,10 @@
 .mail-container {
   height: 100vh;
 
+  .compose-btn {
+    height: 65px;
+  }
+
   .header,
   .sidebar,
   .content {

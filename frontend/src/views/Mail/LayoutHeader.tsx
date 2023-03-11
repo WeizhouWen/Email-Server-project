@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { UserOutlined } from '@ant-design/icons';
 import { Popover, Layout } from 'antd';
 import { useOutletContext, useNavigate } from 'react-router-dom';
 
@@ -20,7 +19,7 @@ const LayoutHeader: FC<Props> = ({setUser}) => {
 
   return (
     <Header className="header">
-      <div className="header-title">COEN Mail</div>
+      <div className="header-title">Student Mail</div>
       
       <Popover
         overlayClassName="user-menu-pop"
@@ -29,7 +28,6 @@ const LayoutHeader: FC<Props> = ({setUser}) => {
         placement="bottomRight"
       >
         <div className="icon-container">
-          <UserOutlined className="header-icon"/>
           <span>{user.userEmailAddress}</span>
         </div>
       </Popover>

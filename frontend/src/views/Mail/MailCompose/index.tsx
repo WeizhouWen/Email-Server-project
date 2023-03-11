@@ -54,6 +54,7 @@ const MailCompose: FC<Props> = ({user, defaultData, onClose}) => {
 
   return (
     <div className="mail-compose">
+      
       <div className="title-box">
         <span>New Mail</span>
         <CloseOutlined className="close-icon" onClick={onClose}/>
