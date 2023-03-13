@@ -28,8 +28,8 @@ Create root privileges for other IP addresses so we can connect to this mysql re
 
 ```
 $ sudo mysql
-mysql>CREATE USER 'root'@'192.168.64.14' IDENTIFIED BY 'password';
-mysql>GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.64.14' mysql>WITH GRANT OPTION;
+mysql>CREATE USER 'root'@'192.168.64.18' IDENTIFIED BY 'password';
+mysql>GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.64.18' WITH GRANT OPTION;
 mysql>FLUSH PRIVILEGES;
 ```
 
@@ -65,7 +65,7 @@ $ multipass transfer nginx.conf vmLoadBalancer:.
 
 Connect to this VM. Change nginx configuration and restart service
 ```
-$ ssh ubuntu@192.168.64.15
+$ ssh ubuntu@192.168.64.16
 $ sudo cp nginx.conf /etc/nginx/nginx.conf
 $ sudo systemctl restart nginx.service
 ```
