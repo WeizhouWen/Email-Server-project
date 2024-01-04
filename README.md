@@ -1,4 +1,4 @@
-# COEN 241 Project -- Mail Server
+# Mail Server
 
 By Jihao Chen, Yangzhang Zhou, Fangfang Lin, Weizhou Wen
 
